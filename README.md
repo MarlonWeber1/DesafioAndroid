@@ -33,4 +33,11 @@ Qual o comando para criação de um novo repositório no Git?
 <p>
 <p>
 
+Com o Git Você pode propor mudanças (adicioná-las ao Index) usando um comando. Qual é esse comando?
+<p>
+	O comando para propor essas mudanças seria o git add -p.
+
+<p>
+<p>
+
 
