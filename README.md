@@ -40,4 +40,11 @@ Com o Git Você pode propor mudanças (adicioná-las ao Index) usando um comando
 <p>
 <p>
 
+O que é a Branch master e para que serve?
+<p>
+	Quando criamos um repositório, ele automaticamente é iniciado com a branch master, a parte principal do seu projeto as seguintes branches são secundárias.
+	
+<p>
+<p>
+
 
