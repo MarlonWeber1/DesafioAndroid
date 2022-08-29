@@ -19,5 +19,11 @@ O que é um scrum Product Owner?
 <p>
 <p>
 
+O que é Git?
+<p>
+	O Git é um Sistema de Controle de Versões Distribuído, que tem função de registrar qualquer alteração que foi realizada no projeto.
+	
+<p>
+<p>
 
 
