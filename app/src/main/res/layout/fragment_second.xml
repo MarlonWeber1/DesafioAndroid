@@ -7,21 +7,170 @@
     tools:context=".SecondFragment">
 
     <TextView
-        android:id="@+id/textview_second"
+        android:id="@+id/second_nomepaises_fragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/button_second"
+        android:layout_margin="15dp"
+        android:textSize="40dp"
+        tools:text="World"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button_second"
+    <TextView
+        android:id="@+id/fragment_ultimaAtualizacao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/previous"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:text="Ultima atualização:"
+        android:textSize="20dp"
+        android:layout_marginLeft="15dp"
+        android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_second" />
+        app:layout_constraintTop_toBottomOf="@+id/second_nomepaises_fragment" />
+
+    <TextView
+        android:id="@+id/fragment_ultimAtualizacaoInfo"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_ultimaAtualizacao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fragment_ultimaAtualizacao"
+        tools:text="2022-08-19 21:10"/>
+
+    <TextView
+        android:id="@+id/fragment_casosAtivos"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Casos ativos:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/fragment_ultimaAtualizacao"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_ultimaAtualizacao"/>
+
+    <TextView
+        android:id="@+id/fragment_casosativosInfo"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_casosAtivos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fragment_casosAtivos"
+        tools:text="+613,399"/>
+
+    <TextView
+        android:id="@+id/fragment_novosCasos"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Novos casos:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/fragment_casosAtivos"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_casosAtivos" />
+
+    <TextView
+        android:id="@+id/fragment_novosCasosInfo"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_novosCasos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fragment_novosCasos"
+        tools:text="+625,727"/>
+
+    <TextView
+        android:id="@+id/fragment_novasMortes"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Novas mortes:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/fragment_novosCasos"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_novosCasos"/>
+
+    <TextView
+        android:id="@+id/fragment_novasMortesInfo"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_novasMortes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fragment_novasMortes"
+        tools:text="+1,361"/>
+
+    <TextView
+        android:id="@+id/fragment_totalDeCasos"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Total de casos:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/fragment_novasMortes"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_novasMortes"/>
+
+    <TextView
+        android:id="@+id/fragment_totalDeCasosInfo"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_totalDeCasos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fragment_totalDeCasos"
+        tools:text="599,321,245"/>
+
+    <TextView
+        android:id="@+id/fragment_totalDeMortes"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Total de mortes:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/fragment_totalDeCasos"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_totalDeCasos"/>
+
+    <TextView
+        android:id="@+id/fragment_totalDeMortesInfo"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_totalDeMortes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fragment_totalDeMortes"
+        tools:text="6,467,744"/>
+
+    <TextView
+        android:id="@+id/fragment_totalDeRecuperados"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Total de recuperados:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/fragment_totalDeMortes"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_totalDeMortes"/>
+
+    <TextView
+        android:id="@+id/fragment_totalDeRecuperadosInfo"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_totalDeRecuperados"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fragment_totalDeRecuperados"
+        tools:text="573,358,577"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
+import com.example.recyclerview.data.CountryCovidData;
 import com.example.recyclerview.databinding.FragmentSecondBinding;
 
 public class SecondFragment extends Fragment {
@@ -28,14 +29,17 @@ public class SecondFragment extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        Bundle infos = getArguments();
+        CountryCovidData dadosCovidPaises = (CountryCovidData) infos.getSerializable("12345");
+        binding.secondNomepaisesFragment.setText(dadosCovidPaises.getCountryText());
+        binding.fragmentUltimAtualizacaoInfo.setText(dadosCovidPaises.getLastUptade());
+        binding.fragmentCasosativosInfo.setText(dadosCovidPaises.getActiveCasesText());
+        binding.fragmentNovosCasosInfo.setText(dadosCovidPaises.getNewCasesText());
+        binding.fragmentNovasMortesInfo.setText(dadosCovidPaises.getNewDeathsText());
+        binding.fragmentTotalDeCasosInfo.setText(dadosCovidPaises.getTotalCasesText());
+        binding.fragmentTotalDeMortesInfo.setText(dadosCovidPaises.getTotalDeathsText());
+        binding.fragmentTotalDeRecuperadosInfo.setText(dadosCovidPaises.getTotalRecoveredText());
 
-        binding.buttonSecond.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavHostFragment.findNavController(SecondFragment.this)
-                        .navigate(R.id.action_SecondFragment_to_FirstFragment);
-            }
-        });
     }
 
     @Override
