@@ -47,4 +47,8 @@ O que é a Branch master e para que serve?
 <p>
 <p>
 
+Qual a diferença entre git e github?
+<p>
+Enquanto o Git é um software, o GitHub é uma plataforma para realizar o controle de projetos.
+
 
