@@ -26,4 +26,11 @@ O que é Git?
 <p>
 <p>
 
+Qual o comando para criação de um novo repositório no Git?
+<p>
+	O comando para criação é o git init.
+
+<p>
+<p>
+
 
