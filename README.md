@@ -51,4 +51,11 @@ Qual a diferença entre git e github?
 <p>
 Enquanto o Git é um software, o GitHub é uma plataforma para realizar o controle de projetos.
 
+<p>
+<p>
+
+Conta pra gente como foi sua experiência na Sprint#02 do programa de bolsa@Android e quais suas expectativas a partir de agora:
+<p>
+	E questão do curso foi uma parte super produtiva que consegui absorver bastante informação, entretanto tive algumas dificuldades com o desafio com conteúdo que não foram vistos nos cursos e isso acabou me custando muito tempo para ter que pesquisar fora e realmente conseguir entender, porem tudo isso serviu como aprendizado e sobre expectativas é sempre buscar evoluir cada vez mais na área.
+
 
